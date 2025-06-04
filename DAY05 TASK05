@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Callback Function (Simple Example)</title>
+</head>
+<body>
+<h2>Callback Function (Simple Example)</h2>
+<script>
+function sayHello(greeting) {
+    document.writeln("Inside sayHello function");
+    greeting();
+}
+function greeting() {
+    document.writeln("Hello from the callback function!");
+}
+sayHello(greeting);
+</script>
+</body>
+</html>
