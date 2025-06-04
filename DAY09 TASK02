@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Anonymous Function Example</title>
+    <title>Higher-Order Function (HOF) Example</title>
 </head>
 <body>
-<h2>Anonymous Function</h2>
+<h2>Higher-Order Function</h2>
 <script>
-    const greet = function(name) {
-        document.write("Hello, " + name + " (from anonymous function)");
-    };
-    greet("Alice");
+    function applyOperation(a, b, add) {
+        return add(a, b);
+    }
+    const add = (x, y) => x + y;
+    document.write("10 + 20 = " + applyOperation(10, 20, add));
 </script>
 </body>
 </html>
